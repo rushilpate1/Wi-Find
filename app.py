@@ -24,6 +24,38 @@ except Exception as e:
     print(f"Error loading current_customers.csv: {e}")
     user_info = pd.DataFrame()
 
+@app.route('/api/connectivity', methods=['GET'])
+def get_connectivity():
+    return jsonify({product_catalog})
+
+@app.route('/api/products', methods=['GET'])
+def get_products():
+    """
+    Get the product catalog.
+    """
+    if product_catalog.empty:
+        return jsonify({"error": "Product catalog not available"}), 500
+    return jsonify(product_catalog.to_dict(orient='records'))
+
+@app.route('/api/users', methods=['GET'])
+def get_users():
+    """
+    Get the user information.
+    """
+    if user_info.empty:
+        return jsonify({"error": "User information not available"}), 500
+    return jsonify(user_info.to_dict(orient='records'))
+
+@app.route('/api/user/<acct_id>', methods=['GET'])
+def get_user(acct_id):
+    """
+    Get information for a specific user.
+    """
+    user_data = user_info[user_info['acct_id'] == acct_id].to_dict(orient='records')
+    if not user_data:
+        return jsonify({"error": "User not found"}), 404
+    return jsonify(user_data[0])
+
 # SambaNova API Configurations
 SAMBA_API_URL = "https://api.sambanova.ai/v1/chat/completions"
 SAMBA_API_KEY = "8607c80a-b115-4eb2-bb39-d70a73c43e53"
@@ -48,7 +80,7 @@ def call_sambanova_api(model, messages):
         return {"error": str(e)}
 
 # Route for Chatbot Assistance
-@app.route('/chatbot', methods=['POST'])
+@app.route('/api/chatbot', methods=['POST'])
 def chatbot_assistance():
     """
     AI-based chatbot for network troubleshooting and product recommendations.
@@ -140,7 +172,7 @@ def chatbot_assistance():
         return jsonify({"error": str(e)}), 500
 
 # Route for Video Upload and Integration with AR
-@app.route('/upload_video', methods=['POST'])
+@app.route('/api/upload_video', methods=['POST'])
 def upload_video():
     """
     Upload video, analyze it using SambaNova API, and integrate with AR recommendations.
