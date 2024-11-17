@@ -1,0 +1,6 @@
+acct_id,extenders,wireless_clients_count,wired_clients_count,rx_avg_bps,tx_avg_bps,rx_p95_bps,tx_p95_bps,rx_max_bps,tx_max_bps,rssi_mean,rssi_median,rssi_max,rssi_min,network_speed,city,state,whole_home_wifi,wifi_security,wifi_security_plus,premium_tech_pro,identity_protection,family_identity_protection,total_shield,youtube_tv
+shriram,0,7,4,172187.4727,3547.345455,1164882.327,15615.14545,1813060.718,34328.29091,-53.4,-54,-40,-74,500.0M,KILGORE,TX,,TRUE,,,,,,
+ayush,0,7,1,901259.9,13156.1125,2653731.575,37959.15,3169552.225,222281.55,-56,-58,-31,-72,1000.0M,WALTON,WV,,,,,,,,
+rohan,2,18,7,106105.424,8879.296,763963.344,56195.816,1215248.14,242864.6,-58.3,-59,-35,-84,500.0M,CERRITOS,CA,TRUE,,,,,,,
+sai,4,15,13,1064571.618,978670.2464,1966970.182,1002985.046,6550870.964,1111807.396,-59.4,-63,-29,-89,2000.0M,BALDWIN PARK,CA,,,,,,,,
+rushil,1,6,4,408102.84,590561.95,605627.19,603426.7,1067459.46,723857.27,-65.4,-65,-34,-85,500.0M,COPPELL,TX,,,,,,,,

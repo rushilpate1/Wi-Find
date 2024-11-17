@@ -1,0 +1,8 @@
+Product Name,Features,Price,Connectivity Speed (Mbps),Router Type,Frequency Band,Product Type
+Fiber 500,500Mbps Connection. Includes one standard Wi-Fi router,$45/mo,500,Standard,"2.4 GHz, 5 GHz",Router
+Fiber 1 Gig,1Gbps Connection. Includes one standard Wi-Fi router,$65/mo,1000,Standard,"2.4 GHz, 5 GHz",Router
+Fiber 2 Gig,2Gbps Connection. Includes one upgraded Wi-Fi router and one extender,$99/mo,2000,Upgraded,"2.4 GHz, 5 GHz",Router + Extender
+Additional Extender,Additional extender for above products,$5/mo,,,"2.4 GHz, 5 GHz",Extender
+Fiber 5 Gig,5Gbps Connection. Includes one premium router,$129/mo,5000,Premium,5 GHz,Router
+Fiber 7 Gig,7Gbps Connection. Includes one premium router and an extender at no charge,$299/mo,7000,Premium,5 GHz,Router + Extender
+Whole-Home Wi-Fi,"Get the latest generation router with up to two additional extenders for Fiber 2 Gig speeds and below. Helps with dead spots, drop-offs, and buffering.",$10/mo,Varies,Latest Gen,"2.4 GHz, 5 GHz",Router + Extender
